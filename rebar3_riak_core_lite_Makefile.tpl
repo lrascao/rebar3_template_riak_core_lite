@@ -41,22 +41,22 @@ devrel3:
 devrel: devrel1 devrel2 devrel3
 
 dev1-attach:
-	NODENAME=dev1 $(BASEDIR)/_build/dev1/rel/{{ name }}/bin/$(APPNAME) attach
+	NODENAME=tanodb1 $(BASEDIR)/_build/dev1/rel/{{ name }}/bin/$(APPNAME) attach
 
 dev2-attach:
-	NODENAME=dev2 $(BASEDIR)/_build/dev2/rel/{{ name }}/bin/$(APPNAME) attach
+	NODENAME=tanodb2 $(BASEDIR)/_build/dev2/rel/{{ name }}/bin/$(APPNAME) attach
 
 dev3-attach:
-	NODENAME=dev3 $(BASEDIR)/_build/dev3/rel/{{ name }}/bin/$(APPNAME) attach
+	NODENAME=tanodb3 $(BASEDIR)/_build/dev3/rel/{{ name }}/bin/$(APPNAME) attach
 
 dev1-console:
-	NODENAME=dev1 $(BASEDIR)/_build/dev1/rel/{{ name }}/bin/$(APPNAME) console
+	NODENAME=tanodb1 $(BASEDIR)/_build/dev1/rel/{{ name }}/bin/$(APPNAME) console
 
 dev2-console:
-	NODENAME=dev2 $(BASEDIR)/_build/dev2/rel/{{ name }}/bin/$(APPNAME) console
+	NODENAME=tanodb2 $(BASEDIR)/_build/dev2/rel/{{ name }}/bin/$(APPNAME) console
 
 dev3-console:
-	NODENAME=dev3 $(BASEDIR)/_build/dev3/rel/{{ name }}/bin/$(APPNAME) console
+	NODENAME=tanodb3 $(BASEDIR)/_build/dev3/rel/{{ name }}/bin/$(APPNAME) console
 
 devrel-clean:
 	rm -rf _build/dev*/rel

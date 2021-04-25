@@ -14,7 +14,7 @@
 {project_plugins, [
     {rebar3_scuttler,
         {git, "https://github.com/lrascao/rebar3_scuttler",
-            {branch, "develop"}}}
+            {tag, "0.5.0"}}}
 ]}.
 
 {relx, [{release, { <% name %> , "0.1.0"},
